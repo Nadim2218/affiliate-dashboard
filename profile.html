@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+    body {
+        background-color: #f8f9fa;
+      }
+      
+      .card {
+        margin: 0 auto;
+      }
+      
+      form label {
+        font-weight: bold;
+      }
+      
+      form .form-group input,
+      form .form-group select {
+        border-radius: 0;
+      }
+      
+      .btn-success {
+        border-radius: 0;
+      }
+      
+      .input-group-text {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+      }
+      
+      .card .text-center h2 {
+        font-size: 1.25rem;
+      }
+      
+      .card .text-center h4 {
+        font-size: 1rem;
+        color: #6c757d;
+      }
+      
+      .position-relative .camera-icon{
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 1.25rem;
+        color: #6c757d;
+        background-color: transparent;
+        z-index: 9;
+    }
+      .rounded-circle{
+        position: relative;
+      }
+      .camera-icon{
+        position: absolute;
+        bottom: 50px;
+        left:0 ;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 1.25rem;
+        color: #6c757d;
+        background-color: transparent;
+        z-index: 9;
+      }
+     .page-name{
+        margin-left: 20px;
+        margin-top: 5px;
+     }
+      
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <button type="button" id="sidebarInnerClose" class="btn btn-info btnn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+           <img src="images/AffiliationLogoWhite.png" alt="Logo">
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#profile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div class="row quicktech-pro">
+                        <div class="col-lg-3 col-3 pro-img"><img src="images/images.png" class="w-100" alt=""></div>
+                        <div class="col-lg-7 col-7">
+                            <div class="quicktech-profile">
+                                <h5>John Abraham</h5>
+                                <h6>V2UNK0000d6fb</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-2">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                   
+                 </a>
+                 <ul class="collapse list-unstyled" id="profile">
+                    <li><a href="profile.html" style="font-size:14px;"><i class="fa-solid fa-pen-to-square"></i> এডিট প্রোফাইল  </a></li>
+                    <li><a href="payment.html" style="font-size:14px;"><i class="fa-solid fa-wallet"></i> আমার পেমেন্ট </a></li>
+                    <li><a href="changepass.html" style="font-size:14px;"><i class="fa-solid fa-lock"></i> পাসওয়ার্ড পরিবর্তন </a></li>
+                    <li><a href="support.html" style="font-size:14px;"><i class="fa-solid fa-phone"></i> সাপোর্ট ম্যানেজার  </a></li>
+                    <li><a href="#" id="logoutLink" style="font-size:14px;"><i class="fas fa-sign-out-alt"></i> লগ আউট</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="index.html"><i class="fa-solid fa-boxes-stacked"></i> প্রোডাক্টসমূহ</a>
+            </li>
+            <li>
+                <a href="target.html"><i class="fa-solid fa-bullseye"></i> সেলস টার্গেট </a>
+            </li>
+            <li>
+                <a href="report.html"><i class="fa-solid fa-chart-simple"></i> রিপোর্টসমূহ </a>
+            </li>
+            <li>
+            <a href="leaderboard.html"><i class="fa-solid fa-chart-column"></i> লিডারবোর্ড  </a>
+            </li>
+
+            <p class="quicktech-line">প্রয়োজনীয় লিঙ্ক সমূহ</p>
+         
+            <li><a href="#"><i class="fa-solid fa-book"></i> লার্নিং রুম <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-solid fa-sheet-plastic"></i> মাস্টার শিট <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> ফেসবুক গ্রুপ <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i> ইউটিউব <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <div class="row text-left">
+                    <div class="container-fluid">
+                       <div class="quicktech-t">
+                        <div class="quicktech-toggle-main">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button type="button" id="sidebarClose" class="btn btn-info d-none">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="quicktech-logo2">
+                            <img src="images/AffiliationLogo.png" alt="">
+                        </div>
+                       
+                        <div class="page-name">
+                            <h5> এডিট প্রোফাইল  </h5>
+                        </div>
+                        <div class="quicktech-noti text-right" onclick="toggleDropdown()">
+                          <i class="fa-solid fa-bell"></i>
+                          <div id="notificationDropdown" class="dropdown-content">
+                              <a href="#">Notification 1</a>
+                              <a href="#">রিপোর্টসমূহ 2</a>
+                              <a href="#">Notification 3</a>
+                          </div>
+                      </div>
+                       </div>
+                    </div>
+            </div>
+         </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card p-4">
+                        <div class="text-center mb-4 position-relative">
+                            <div class="camera-icon">
+                                <i class="fas fa-camera"></i>
+                              </div>
+                          <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Profile Picture" width="100">
+                          <h2 class="mt-2">V2UNK0000d6fb</h2>
+                          <h4>Kartik Banik Shishir</h4>
+                        </div>
+                        <form>
+                          <div class="form-group">
+                            <label for="fullName">আপনার পুরো নামটি দিন</label>
+                            <input type="text" class="form-control" id="fullName" value="Kartik Banik Shishir" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="facebookLink">ফেসবুক প্রোফাইল লিঙ্ক</label>
+                            <input type="url" class="form-control" id="facebookLink" value="https://www.facebook.com/KartikBanikShishir?mib" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="paymentMethod">যে মাধ্যমে পেমেন্ট চান সেটি নির্বাচন করুন</label>
+                            <select class="form-control" id="paymentMethod" required>
+                              <option value="বিকাশ">বিকাশ</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="phoneNumber">আপনার বিকাশ একাউন্টের নম্বরটি দিন</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">🇧🇩</span>
+                              </div>
+                              <input type="tel" class="form-control" id="phoneNumber" value="+8801862131292" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="platform">আপনার প্ল্যাটফর্ম নির্বাচন করুন</label>
+                            <select class="form-control" id="platform" required>
+                              <option value="Website">Website</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="platformLink">প্ল্যাটফর্ম এর লিঙ্ক</label>
+                            <input type="url" class="form-control" id="platformLink" value="http://needboxbd.xyz/" required>
+                          </div>
+                          <button type="submit" class="btn btn-success btn-block">আপডেট করুন</button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+     
+    </div>
+        <!-- Logout Confirmation Modal -->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutModalLabel">লগআউট নিশ্চিত করুন</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          আপনি লগ আউট করতে চান?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">না</button>
+        <a href="logout.html" class="btn btn-success">হ্যাঁ</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarInnerClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+    });
+</script>
+<script>
+  $(document).ready(function(){
+    $("#logoutLink").click(function(event){
+      event.preventDefault();
+      $("#logoutModal").modal('show');
+    });
+  });
+</script>
+</body>
+</html>

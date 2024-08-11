@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- new cdn -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- new cdn -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <button type="button" id="sidebarInnerClose" class="btn btn-info btnn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+           <img src="images/AffiliationLogoWhite.png" alt="Logo">
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#profile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div class="row quicktech-pro">
+                        <div class="col-lg-3 col-3 pro-img"><img src="images/images.png" class="w-100" alt=""></div>
+                        <div class="col-lg-7 col-7">
+                            <div class="quicktech-profile">
+                                <h5>John Abraham</h5>
+                                <h6>V2UNK0000d6fb</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-2">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                   
+                 </a>
+                <ul class="collapse list-unstyled" id="profile">
+                    <li><a href="profile.html" style="font-size:14px;"><i class="fa-solid fa-pen-to-square"></i> এডিট প্রোফাইল  </a></li>
+                    <li><a href="payment.html" style="font-size:14px;"><i class="fa-solid fa-wallet"></i> আমার পেমেন্ট </a></li>
+                    <li><a href="changepass.html" style="font-size:14px;"><i class="fa-solid fa-lock"></i> পাসওয়ার্ড পরিবর্তন </a></li>
+                    <li><a href="support.html" style="font-size:14px;"><i class="fa-solid fa-phone"></i> সাপোর্ট ম্যানেজার  </a></li>
+                    <li><a href="#" id="logoutLink" style="font-size:14px;"><i class="fas fa-sign-out-alt"></i> লগ আউট</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="index.html"><i class="fa-solid fa-boxes-stacked"></i> প্রোডাক্টসমূহ</a>
+            </li>
+            <li>
+                <a href="target.html"><i class="fa-solid fa-bullseye"></i> সেলস টার্গেট </a>
+            </li>
+            <li>
+                <a href="report.html"><i class="fa-solid fa-chart-simple"></i> রিপোর্টসমূহ </a>
+            </li>
+            <li>
+            <a href="leaderboard.html"><i class="fa-solid fa-chart-column"></i> লিডারবোর্ড  </a>
+            </li>
+
+            <p class="quicktech-line">প্রয়োজনীয় লিঙ্ক সমূহ</p>
+         
+            <li><a href="#"><i class="fa-solid fa-book"></i> লার্নিং রুম <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-solid fa-sheet-plastic"></i> মাস্টার শিট <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> ফেসবুক গ্রুপ <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i> ইউটিউব <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <div class="row text-left">
+                    <div class="container-fluid">
+                       <div class="quicktech-t">
+                        <div class="quicktech-toggle-main">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button type="button" id="sidebarClose" class="btn btn-info d-none">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="quicktech-logo2">
+                            <img src="images/AffiliationLogo.png" alt="">
+                        </div>
+                        <div class="quicktech-noti text-right" onclick="toggleDropdown()">
+                            <i class="fa-solid fa-bell"></i>
+                            <div id="notificationDropdown" class="dropdown-content">
+                                <a href="#">Notification 1</a>
+                                <a href="#">Notification 2</a>
+                                <a href="#">Notification 3</a>
+                            </div>
+                        </div>
+                    
+                       </div>
+                    </div>
+              
+                  
+            </div>
+         </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active quicktech-slideimg ">
+                            <img src="images/slide1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item quicktech-slideimg ">
+                            <img src="images/slide2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item quicktech-slideimg ">
+                            <img src="images/slide1.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top Selling Section -->
+        <section id="quicktech-topselling">
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="quicktech-topselling-header">
+                            <h5>📌 টপ সেলিং প্রোডাক্টসমূহ <i class="fa-solid fa-circle-info" style="font-size: 15px; padding-left:5px; color:#979797;"></i></h5>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left prev"></i>
+    <i class="fa-solid fa-chevron-right next"></i>
+                <div class="row mt-3 gapp c-main">
+                    <div class="col-lg-6 quicktech-top-bg">
+                        <div class="quicktech-topselling-main">
+                            <div class="row">
+                                <div class="col-lg-3 col-3 text-center">
+                                    <div class="quicktech-tops-img">
+                                        <img src="images/topselling.jpg" class="w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <div class="quicktech-top-content">
+                                        <h6>HSC 24 শেষ মুহূর্তের প্রস্তুতি কোর্স </h6>
+                                        <button><a href="#">দেখুন </a></button>
+                                    </div>
+                                    <div class="quicktech-discount mt-2">
+                                        <a href="#">মূল্যছাড় তথ্য <i class="fa-solid fa-circle-info"></i> </a>
+                                    </div>
+                                    <div class="quicktech-top-selling-price mt-5">
+                                        <h7>কমিশন: <span>15%</span></h7>
+                                        <h7>Price: ৳ 18300 <s>৳ 17000</s></h7>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quicktech-top-bg">
+                        <div class="quicktech-topselling-main">
+                            <div class="row">
+                                <div class="col-lg-3 col-3 text-center">
+                                    <div class="quicktech-tops-img">
+                                        <img src="images/topselling.jpg" class="w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <div class="quicktech-top-content">
+                                        <h6>HSC 24 শেষ মুহূর্তের প্রস্তুতি কোর্স </h6>
+                                        <button><a href="#">দেখুন </a></button>
+                                    </div>
+                                    <div class="quicktech-discount mt-2">
+                                        <a href="#">মূল্যছাড় তথ্য <i class="fa-solid fa-circle-info"></i> </a>
+                                    </div>
+                                    <div class="quicktech-top-selling-price mt-5">
+                                        <h7>কমিশন: <span>15%</span></h7>
+                                        <h7>Price: ৳ 18300 <s>৳ 17000</s></h7>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quicktech-top-bg">
+                        <div class="quicktech-topselling-main">
+                            <div class="row">
+                                <div class="col-lg-3 col-3 text-center">
+                                    <div class="quicktech-tops-img">
+                                        <img src="images/topselling.jpg" class="w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-9">
+                                    <div class="quicktech-top-content">
+                                        <h6>HSC 24 শেষ মুহূর্তের প্রস্তুতি কোর্স </h6>
+                                        <button><a href="#">দেখুন </a></button>
+                                    </div>
+                                    <div class="quicktech-discount mt-2">
+                                        <a href="#">মূল্যছাড় তথ্য <i class="fa-solid fa-circle-info"></i> </a>
+                                    </div>
+                                    <div class="quicktech-top-selling-price mt-5">
+                                        <h7>কমিশন: <span>15%</span></h7>
+                                        <h7>Price: ৳ 18300 <s>৳ 17000</s></h7>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-12">
+                        <div class="quicktech-seemore text-center">
+                            <button><a href="#">See More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Top Selling Section -->
+
+        <!-- Homepage Section -->
+        <section id="quicktech-homepage">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="quicktech-homepage-header">
+                        <h5><i class="fa-solid fa-house" style="font-size: 17px;"></i> হোমপেইজ <i class="fa-solid fa-circle-info" style="font-size: 15px; padding-left:5px; color:#979797;"></i></h5>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-left prevv"></i>
+            <i class="fa-solid fa-chevron-right nextt"></i>
+            <div class="row mt-5 gapp h-main">
+                <div class="col-lg-6 quicktech-homepage-bg">
+                    <div class="quicktech-homepage-main">
+                        <div class="row">
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-img">
+                                    <img src="images/topselling.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="quicktech-homepage-content">
+                                    <h6>Hot Deal: Online Batch 2024</h6>
+                                    <p> সবচেয়ে লাভজনক কোর্স টেন মিনিট স্কুলের অ... </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-button">
+                                    <button><a href="#">কপি</a></button>
+                                    <button style="background-color: white; border:1px solid black; padding:5px 10px;"><a href="#" style="color: black;">  কন্টেন্ট  </a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 quicktech-homepage-bg">
+                    <div class="quicktech-homepage-main">
+                        <div class="row">
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-img">
+                                    <img src="images/topselling.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="quicktech-homepage-content">
+                                    <h6>Hot Deal: Online Batch 2024</h6>
+                                    <p> সবচেয়ে লাভজনক কোর্স টেন মিনিট স্কুলের অ... </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-button">
+                                    <button><a href="#"> কপি </a></button>
+                                    <button style="background-color: white; border:1px solid black; padding:5px 10px;"><a href="#" style="color: black;">  কন্টেন্ট  </a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 quicktech-homepage-bg">
+                    <div class="quicktech-homepage-main">
+                        <div class="row">
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-img">
+                                    <img src="images/topselling.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="quicktech-homepage-content">
+                                    <h6>Hot Deal: Online Batch 2024</h6>
+                                    <p> সবচেয়ে লাভজনক কোর্স টেন মিনিট স্কুলের অ... </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-button">
+                                    <button><a href="#"> কপি </a></button>
+                                    <button style="background-color: white; border:1px solid black; padding:5px 10px;"><a href="#" style="color: black;">  কন্টেন্ট  </a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 quicktech-homepage-bg">
+                    <div class="quicktech-homepage-main">
+                        <div class="row">
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-img">
+                                    <img src="images/topselling.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <div class="quicktech-homepage-content">
+                                    <h6>Hot Deal: Online Batch 2024</h6>
+                                    <p> সবচেয়ে লাভজনক কোর্স টেন মিনিট স্কুলের অ... </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <div class="quicktech-homepage-button">
+                                    <button><a href="#"> কপি </a></button>
+                                    <button style="background-color: white; border:1px solid black; padding:5px 10px;"><a href="#" style="color: black;">  কন্টেন্ট  </a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-12">
+                    <div class="quicktech-seemore text-center">
+                        <button><a href="#">See More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- End Homepage Section -->
+
+        <!-- all product -->
+        <section id="quicktech-allproducts">
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-7">
+                        <div class="quicktech-all-header">
+                            <h5>📚 সকল প্রোডাক্টসমূহ <i class="fa-solid fa-circle-info" style="font-size: 15px; padding-left:5px; color:#979797;"></i></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-5">
+                        <div class="quicktech-input text-right">
+                            <input  type="text" placeholder="খুঁজুন" class="input">
+                        </div>
+                        <div class="quicktech-in">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-6 col-12">
+                        <div class="quicktech-category">
+                            <div class="quictech-cat1">
+                                <label><h6>Category</h6></label>
+                              <div>
+                                <input type="text" placeholder="Select Category">
+                              </div>
+                            </div>
+                            <div class="quictech-cat2">
+                                <label><h6>Sub-Category</h6></label>
+                              <div>
+                                <input type="text" placeholder="Select sub-Category">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="quicktech-catmenu mt-4">
+                            <ul class="nav nav-tabs navv" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="ফ্রি-tab" data-toggle="tab" href="#ফ্রি" role="tab" aria-controls="home" aria-selected="true">ফ্রি</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="নতুন-tab" data-toggle="tab" href="#নতুন" role="tab" aria-controls="profile" aria-selected="false">নতুন</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="সর্বোচ্চ_কমিশন-tab" data-toggle="tab" href="#সর্বোচ্চ_কমিশন" role="tab" aria-controls="messages" aria-selected="false">সর্বোচ্চ কমিশন </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="সব-tab" data-toggle="tab" href="#সব" role="tab" aria-controls="messages" aria-selected="false">সব </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="container-fluid">
+                            <div class="quicktech-tabs">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="ফ্রি" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="container-fluid">
+                                            <div class="row gapp">
+                                                <div class="col-lg-12">
+                                                   <div class="row quicktech-all-bg">
+                                                    <div class="col-lg-2 col-sm-2">
+                                                        <div class="quicktech-all-img">
+                                                            <img src="images/topselling.jpg" class="w-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-sm-5">
+                                                        <div class="quicktech-all-content">
+                                                            <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                            <br>
+                                                            <p>৳ 6500 <s> ৳7500</s></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-3 col-6">
+                                                        <div class="quicktech-commision text-center">
+                                                            <p>কমিশন:<span>15%</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-2 col-6">
+                                                       <div class="quicktech-all-button">
+                                                        <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                       </div>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="row quicktech-all-bg">
+                                                     <div class="col-lg-2 col-sm-2">
+                                                         <div class="quicktech-all-img">
+                                                             <img src="images/topselling.jpg" class="w-100" alt="">
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-5 col-sm-5">
+                                                         <div class="quicktech-all-content">
+                                                             <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                             <br>
+                                                             <p>৳ 6500 <s> ৳7500</s></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-3 col-sm-3 col-6">
+                                                         <div class="quicktech-commision text-center">
+                                                             <p>কমিশন:<span>15%</span></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-2 col-sm-2 col-6">
+                                                        <div class="quicktech-all-button">
+                                                         <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                        </div>
+                                                     </div>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="নতুন" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="container-fluid">
+                                            <div class="row gapp">
+                                                <div class="col-lg-12">
+                                                    <div class="row quicktech-all-bg">
+                                                     <div class="col-lg-2 col-sm-2">
+                                                         <div class="quicktech-all-img">
+                                                             <img src="images/topselling.jpg" class="w-100" alt="">
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-5 col-sm-5">
+                                                         <div class="quicktech-all-content">
+                                                             <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                             <br>
+                                                             <p>৳ 6500 <s> ৳7500</s></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-3 col-sm-3 col-6">
+                                                         <div class="quicktech-commision text-center">
+                                                             <p>কমিশন:<span>15%</span></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-2 col-sm-2 col-6">
+                                                        <div class="quicktech-all-button">
+                                                         <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                        </div>
+                                                     </div>
+                                                    </div>
+                                                 </div>
+                                                 <div class="col-lg-12">
+                                                     <div class="row quicktech-all-bg">
+                                                      <div class="col-lg-2 col-sm-2">
+                                                          <div class="quicktech-all-img">
+                                                              <img src="images/topselling.jpg" class="w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-5 col-sm-5">
+                                                          <div class="quicktech-all-content">
+                                                              <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                              <br>
+                                                              <p>৳ 6500 <s> ৳7500</s></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-sm-3 col-6">
+                                                          <div class="quicktech-commision text-center">
+                                                              <p>কমিশন:<span>15%</span></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-sm-2 col-6">
+                                                         <div class="quicktech-all-button">
+                                                          <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                         </div>
+                                                      </div>
+                                                     </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="সর্বোচ্চ_কমিশন" role="tabpanel" aria-labelledby="messages-tab">
+                                        <div class="container-fluid">
+                                            <div class="row gapp">
+                                                <div class="col-lg-12">
+                                                    <div class="row quicktech-all-bg">
+                                                     <div class="col-lg-2 col-sm-2">
+                                                         <div class="quicktech-all-img">
+                                                             <img src="images/topselling.jpg" class="w-100" alt="">
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-5 col-sm-5">
+                                                         <div class="quicktech-all-content">
+                                                             <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                             <br>
+                                                             <p>৳ 6500 <s> ৳7500</s></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-3 col-sm-3 col-6">
+                                                         <div class="quicktech-commision text-center">
+                                                             <p>কমিশন:<span>15%</span></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-2 col-sm-2 col-6">
+                                                        <div class="quicktech-all-button">
+                                                         <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                        </div>
+                                                     </div>
+                                                    </div>
+                                                 </div>
+                                                 <div class="col-lg-12">
+                                                     <div class="row quicktech-all-bg">
+                                                      <div class="col-lg-2 col-sm-2">
+                                                          <div class="quicktech-all-img">
+                                                              <img src="images/topselling.jpg" class="w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-5 col-sm-5">
+                                                          <div class="quicktech-all-content">
+                                                              <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                              <br>
+                                                              <p>৳ 6500 <s> ৳7500</s></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-sm-3 col-6">
+                                                          <div class="quicktech-commision text-center">
+                                                              <p>কমিশন:<span>15%</span></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-sm-2 col-6">
+                                                         <div class="quicktech-all-button">
+                                                          <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                         </div>
+                                                      </div>
+                                                     </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="সব" role="tabpanel" aria-labelledby="messages-tab">
+                                        <div class="container-fluid">
+                                            <div class="row gapp">
+                                                <div class="col-lg-12">
+                                                    <div class="row quicktech-all-bg">
+                                                     <div class="col-lg-2 col-sm-2">
+                                                         <div class="quicktech-all-img">
+                                                             <img src="images/topselling.jpg" class="w-100" alt="">
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-5 col-sm-5">
+                                                         <div class="quicktech-all-content">
+                                                             <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                             <br>
+                                                             <p>৳ 6500 <s> ৳7500</s></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-3 col-sm-3 col-6">
+                                                         <div class="quicktech-commision text-center">
+                                                             <p>কমিশন:<span>15%</span></p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="col-lg-2 col-sm-2 col-6">
+                                                        <div class="quicktech-all-button">
+                                                         <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                        </div>
+                                                     </div>
+                                                    </div>
+                                                 </div>
+                                                 <div class="col-lg-12">
+                                                     <div class="row quicktech-all-bg">
+                                                      <div class="col-lg-2 col-sm-2">
+                                                          <div class="quicktech-all-img">
+                                                              <img src="images/topselling.jpg" class="w-100" alt="">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-5 col-sm-5">
+                                                          <div class="quicktech-all-content">
+                                                              <h6>T-shirt এবং Logo Design করে Freelancing</h6>
+                                                              <br>
+                                                              <p>৳ 6500 <s> ৳7500</s></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-sm-3 col-6">
+                                                          <div class="quicktech-commision text-center">
+                                                              <p>কমিশন:<span>15%</span></p>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-2 col-sm-2 col-6">
+                                                         <div class="quicktech-all-button">
+                                                          <button><a href="#"> কপি লিঙ্ক </a></button>
+                                                         </div>
+                                                      </div>
+                                                     </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <!-- all product -->
+    </div>
+
+
+        <!-- Logout Confirmation Modal -->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="logoutModalLabel">লগআউট নিশ্চিত করুন</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            আপনি লগ আউট করতে চান?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">না</button>
+          <a href="logout.html" class="btn btn-success">হ্যাঁ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- new cdn -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    
+$('.c-main').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed:500,
+    nextArrow:".next",
+    prevArrow:".prev",
+    autoplay: true,
+  autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 991.98,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed:500,
+          arrows:false,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 766.98,
+        settings: {
+          slidesToShow: 2,
+    slidesToScroll: 1,
+    speed:500,
+    arrows:false,
+    dots:false
+          
+        }
+      },
+      {
+        breakpoint:  575.98,
+        settings: {
+          infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed:500,
+    arrows:false,
+    dots:false
+        }
+      }
+    
+    ]
+  });
+</script>
+<script>
+    
+    $('.h-main').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed:500,
+        nextArrow:".nextt",
+        prevArrow:".prevv",
+        autoplay: true,
+      autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 991.98,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              speed:500,
+              arrows:false,
+              dots:false
+            }
+          },
+          {
+            breakpoint: 766.98,
+            settings: {
+              slidesToShow: 2,
+        slidesToScroll: 1,
+        speed:500,
+        arrows:false,
+        dots:false
+              
+            }
+          },
+          {
+            breakpoint:  575.98,
+            settings: {
+              infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed:500,
+        arrows:false,
+        dots:false
+            }
+          }
+        
+        ]
+      });
+    </script>
+
+<script>
+    $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarInnerClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+      $("#logoutLink").click(function(event){
+        event.preventDefault();
+        $("#logoutModal").modal('show');
+      });
+    });
+  </script>
+
+  
+</body>
+</html>

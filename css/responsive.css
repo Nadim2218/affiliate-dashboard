@@ -1,0 +1,325 @@
+@media (max-width: 575.98px) {
+    body{
+        overflow-x: hidden;
+    }
+    #sidebar {
+        margin-left: -250px; /* Ensure sidebar is initially hidden */
+        background: #333;
+        z-index: 9999; /* Ensure sidebar is above content */
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #sidebar.active {
+        margin-left: 0; /* Show sidebar when active */
+    }
+
+    #content {
+        padding: 20px;
+        width: 100%; /* Content takes full width */
+        margin-left: 0; /* No left margin */
+    }
+
+    #sidebar.active ~ #content {
+        margin-left: 1px; /* Adjust content margin when sidebar is active */
+    
+    }
+    .quicktech-profile h5{
+        font-size: 16px;
+    }
+    .quicktech-profile h6{
+        font-size: 14px;
+    }
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+    }
+    .quicktech-slideimg img {
+        height: 240px;
+    }
+    .gapp{
+        row-gap: 20px;
+    }
+    .quicktech-logo2 img{
+       width: 50%;
+       margin-left: 60px;
+    }
+    .quicktech-logo2{
+        display: block;
+    }
+    .page-name{
+        display: none;
+    }
+    .quicktech-sales-text h5{
+        padding-top: 1px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .quicktech-salesimg img {
+        width: 60%;
+        margin-left: 53px;
+        
+    }
+    .padd{
+        row-gap: 20px;
+    }
+    .quicktech-segone h5 {
+        font-size: 18px;
+        width: 100px;
+    }
+    .custom-select-widthh {
+        width: 167%;
+        margin-left: 0px;
+    }
+    .quicktech-line {
+        position: relative;
+        font-size: 20px !important;
+    }
+    .quicktech-noti{
+        display: flex;
+        margin-left: 0 !important;
+         
+     }
+     .dropdown-content {
+       
+        top: 44px;
+    }
+    .quicktech-category input {
+        border: 1px solid #979797;
+        padding: 3px 3px 3px 3px;
+        width: 99%;
+    }
+    .quicktech-input input {
+        padding-left: 35px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 110px;
+        z-index: 999;
+        /* margin-right: 25px; */
+    }
+    .quicktech-in {
+        position: absolute;
+        content: '';
+        top: 6px;
+        left: 24px;
+        z-index: 99999;
+    }
+    .quicktech-commision{
+        text-align: left !important;
+    }
+    .quicktech-all-header h5{
+        font-size: 17px;
+    }
+    .quicktech-all-button button {
+        padding: 5px 10px;
+        background-color: #48c774;
+        border: transparent;
+        margin-top: 0px;
+    }
+    .nav li a {
+        font-size: 14px;
+    }
+}
+@media (min-width: 576px) and (max-width: 766.98px) {
+    .page-name{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #sidebar {
+        margin-left: -250px; /* Ensure sidebar is initially hidden */
+        background: #333;
+        z-index: 9999; /* Ensure sidebar is above content */
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #sidebar.active {
+        margin-left: 0; /* Show sidebar when active */
+    }
+
+    #content {
+        padding: 20px;
+        width: 100%; /* Content takes full width */
+        margin-left: 0; /* No left margin */
+    }
+
+    #sidebar.active ~ #content {
+        margin-left: 1px; /* Adjust content margin when sidebar is active */
+    
+    }
+    .quicktech-profile h5{
+        font-size: 16px;
+    }
+    .quicktech-profile h6{
+        font-size: 14px;
+    }
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+    }
+    .quicktech-slideimg img {
+        height: 240px;
+    }
+    .gapp{
+        row-gap: 20px;
+    }
+    .quicktech-logo2 img {
+        width: 42%;
+        margin-left: 130px;
+    }
+    .quicktech-logo2{
+        display: block;
+    }
+    .quicktech-sales-text h5{
+        padding-top: 1px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .quicktech-salesimg img {
+        width: 50%;
+        margin-left: 113px;
+        
+    }
+    .padd{
+        row-gap: 20px;
+    }
+    .quicktech-line {
+        position: relative;
+        font-size: 20px !important;
+    }
+    .quicktech-noti{
+        display: flex;
+        margin-left: 0 !important;
+         
+     }
+     .dropdown-content {
+       
+        top: 44px;
+    }
+    .quicktech-input input {
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 112px;
+     
+    }
+    .quicktech-in {
+        position: absolute;
+        content: '';
+        top: 6px;
+        right: -3px;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 991.98px) {
+    body{
+        overflow-x: hidden;
+    }
+    #sidebar {
+        margin-left: -250px; /* Ensure sidebar is initially hidden */
+        background: #333;
+        z-index: 9999; /* Ensure sidebar is above content */
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #sidebar.active {
+        margin-left: 0; /* Show sidebar when active */
+    }
+
+    #content {
+        padding: 20px;
+        width: 100%; /* Content takes full width */
+        margin-left: 0; /* No left margin */
+    }
+
+    #sidebar.active ~ #content {
+        margin-left: 1px; /* Adjust content margin when sidebar is active */
+    
+    }
+    .quicktech-profile h5{
+        font-size: 16px;
+    }
+    .quicktech-profile h6{
+        font-size: 14px;
+    }
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+    }
+    .quicktech-slideimg img {
+        height: 240px;
+    }
+    .gapp{
+        row-gap: 20px;
+    }
+    .quicktech-logo2 img {
+        width: 42%;
+        margin-left: 130px;
+    }
+    .quicktech-logo2{
+        display: block;
+    }
+    .page-name{
+        display: none;
+    }
+    .quicktech-sales-text h5{
+        padding-top: 1px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .quicktech-salesimg img {
+        width: 31%;
+        margin-left: 233px;
+    }
+    .padd{
+        row-gap: 20px;
+    }
+    .quicktech-line {
+        position: relative;
+        font-size: 20px !important;
+    }
+    .quicktech-noti{
+        display: flex;
+        margin-left: 0 !important;
+         
+     }
+     .dropdown-content {
+       
+        top: 44px;
+    }
+}
+
+
+@media (min-width: 991.98px) and (max-width: 1170px) {
+    .quicktech-noti{
+        display: flex;
+        margin-left: 612px !important;
+         
+     }
+     .page-name{
+        display: none;
+     }
+     .dropdown-content {
+       
+        top: 44px;
+    }
+}

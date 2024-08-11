@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card-body {
+        padding: 20px;
+      }
+      
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      
+      .card-text {
+        font-size: 1rem;
+        color: #6c757d;
+      }
+
+      .quicktech-pay-main{
+        display: flex;
+      }
+      .quicktech-pay-icon i{
+        font-size: 77px;
+      }
+      .quicktech-pay-details{
+        padding-left: 20px;
+      }
+      .quicktech-pay-main{
+        position: relative;
+      }
+      .quicktech-info {
+        position: absolute;
+        content: '';
+        top: -14px;
+        right: -11px;
+        cursor: pointer;
+    }
+    .quicktech-pay-details h5{
+       font-size: 38px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <button type="button" id="sidebarInnerClose" class="btn btn-info btnn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+           <img src="images/AffiliationLogoWhite.png" alt="Logo">
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#profile" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div class="row quicktech-pro">
+                        <div class="col-lg-3 col-3 pro-img"><img src="images/images.png" class="w-100" alt=""></div>
+                        <div class="col-lg-7 col-7">
+                            <div class="quicktech-profile">
+                                <h5>John Abraham</h5>
+                                <h6>V2UNK0000d6fb</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-2">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                   
+                 </a>
+                 <ul class="collapse list-unstyled" id="profile">
+                    <li><a href="profile.html" style="font-size:14px;"><i class="fa-solid fa-pen-to-square"></i> এডিট প্রোফাইল  </a></li>
+                    <li><a href="payment.html" style="font-size:14px;"><i class="fa-solid fa-wallet"></i> আমার পেমেন্ট </a></li>
+                    <li><a href="changepass.html" style="font-size:14px;"><i class="fa-solid fa-lock"></i> পাসওয়ার্ড পরিবর্তন </a></li>
+                    <li><a href="support.html" style="font-size:14px;"><i class="fa-solid fa-phone"></i> সাপোর্ট ম্যানেজার  </a></li>
+                    <li><a href="#" id="logoutLink" style="font-size:14px;"><i class="fas fa-sign-out-alt"></i> লগ আউট</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="index.html"><i class="fa-solid fa-boxes-stacked"></i> প্রোডাক্টসমূহ</a>
+            </li>
+            <li>
+                <a href="target.html"><i class="fa-solid fa-bullseye"></i> সেলস টার্গেট </a>
+            </li>
+            <li>
+                <a href="report.html"><i class="fa-solid fa-chart-simple"></i> রিপোর্টসমূহ </a>
+            </li>
+            <li>
+            <a href="leaderboard.html"><i class="fa-solid fa-chart-column"></i> লিডারবোর্ড  </a>
+            </li>
+
+            <p class="quicktech-line">প্রয়োজনীয় লিঙ্ক সমূহ</p>
+         
+            <li><a href="#"><i class="fa-solid fa-book"></i> লার্নিং রুম <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-solid fa-sheet-plastic"></i> মাস্টার শিট <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+
+            <li><a href="#"><i class="fa-brands fa-facebook"></i> ফেসবুক গ্রুপ <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i> ইউটিউব <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <div class="row text-left">
+                    <div class="container-fluid">
+                       <div class="quicktech-t">
+                        <div class="quicktech-toggle-main">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button type="button" id="sidebarClose" class="btn btn-info d-none">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="quicktech-logo2">
+                            <img src="images/AffiliationLogo.png" alt="">
+                        </div>
+                     
+                        <div class="page-name" style="padding-left: 20px; padding-top:5px;">
+                            <h5>  রিপোর্টসমূহ </h5>
+                        </div>
+                        <div class="quicktech-noti text-right" onclick="toggleDropdown()">
+                          <i class="fa-solid fa-bell"></i>
+                          <div id="notificationDropdown" class="dropdown-content">
+                              <a href="#">Notification 1</a>
+                              <a href="#">রিপোর্টসমূহ 2</a>
+                              <a href="#">Notification 3</a>
+                          </div>
+                      </div>
+                       </div>
+                    </div>
+            </div>
+         </div>
+        </nav>
+
+       
+        <div class="container-fluid mt-5">
+            <div class="row mb-3 gapp">
+              <div class="col-md-4">
+                <div class="quicktech-segment">
+                  <div class="quicktech-segone">
+                    <h5>প্রোডাক্ট সেগমেন্ট</h5>
+                  </div>
+                  <div class="quicktech-segtwo">
+                    <select class="form-control custom-select-width" id="categorySelect">
+                      <option value="all">প্রোডাক্ট সেগমেন্ট</option>
+                      <option value="electronics">শিশু - দ্বাদশ শ্রেণি</option>
+                      <option value="clothing">ক্র্যাশ কোর্স</option>
+                      <option value="home-appliances">স্কিল ডেভেলপমেন্ট</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="quicktech-segment mt-4">
+                  <div class="quicktech-segone">
+                    <h3>প্রোডাক্ট ক্যাটাগরি</h3>
+                  </div>
+                  <div class="quicktech-segtwo">
+                    <select class="form-control custom-select-widthh" id="categorySelect1">
+                      <option value="all">All</option>
+                      <option value="electronics">Kg to 10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                <div class="quicktech-date">
+                    <label for="birthday">থেকে</label>
+                    <input style="margin-left:20px ;" type="date" id="from" name="from"> 
+                   </div>
+                   <div class="quicktech-date mt-4">
+                    <label for="birthday">পর্যন্ত</label>
+                    <input style="margin-left:20px ;" type="date" id="পর্যন্ত" name="পর্যন্ত"> 
+                   </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div> <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div> <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div> <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div> <div class="col-md-4">
+                    <div class="card mb-3 text-center">
+                      <div class="card-body">
+                       <div class="quicktech-pay-main">
+                        <div class="quicktech-pay-icon">
+                            <i class="fas fa-hand-holding-usd fa-2x" style="color: #f7c59f;"></i>
+                        </div>
+                        <div class="quicktech-pay-details">
+                            <h5 class="card-title">0 /-</h5>
+                            <p class="card-text">মোট ডিরেক্ট সেলস</p>
+                        </div>
+                        <div class="quicktech-info">
+                            <i class="fa-solid fa-circle-info" data-toggle="modal" data-target="#infoModal"></i>
+                        </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+         
+          <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+<div class="quicktech-report text-center">
+    <p>কোন কেনাবেচা হয়নি </p>
+</div>
+            </div></div>
+          </div>
+           <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">তারিখ</th>
+                              <th scope="col">ট্রানজেকশন আইডি</th>
+                              <th scope="col">টাইপ</th>
+                              <th scope="col">প্রোডাক্ট</th>
+                              <th scope="col">এমাউন্ট</th>
+                              <th scope="col">ডিস্কাউন্ট কোড</th>
+                              <th scope="col">কমিশন</th>
+                              <th scope="col">আয়</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01/01/2024</td>
+                              <td>TRN001</td>
+                              <td>বিক্রয়</td>
+                              <td>মোবাইল ফোন</td>
+                              <td>৳10,000</td>
+                              <td>DISC10</td>
+                              <td>৳200</td>
+                              <td>৳9,800</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+           </div>
+
+        
+ 
+                  
+     
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <i class="fa-solid fa-circle-info fa-3x" style="color: #f7c59f;"></i>
+          </div>
+          <p style="text-align: center; padding-top:10px;">মোডালের বিস্তারিত বিবরণ এখানে লিখুন।</p>
+          <!-- Add more details here as needed -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">বন্ধ করুন</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        <!-- Logout Confirmation Modal -->
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logoutModalLabel">লগআউট নিশ্চিত করুন</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          আপনি লগ আউট করতে চান?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">না</button>
+        <a href="logout.html" class="btn btn-success">হ্যাঁ</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarInnerClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+    });
+</script>
+<script>
+  $(document).ready(function(){
+    $("#logoutLink").click(function(event){
+      event.preventDefault();
+      $("#logoutModal").modal('show');
+    });
+  });
+</script>
+</body>
+</html>

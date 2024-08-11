@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- new cdn -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- new cdn -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <section id="quicktech-login ">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-2">
+                 <div class="quicktech-logo-dash">
+                    <img src="images/logo.png"  alt="">
+                 </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="quicktech-login-head text-center">  
+                        <h1>WELCOME TO NEEDBOX AFFILIATE ZONE</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 gapp">
+              <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    
+    <div class="login-container button-col">
+        <h2 class="text-center hh">Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+        <div class="quicktech-login-button text-center">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <div class="extra-links">
+            <a href="#" class="text-primary">Forgot Password?</a>
+            <a href="#" class="text-primary">Register</a>
+        </div>
+        </form>
+    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- new cdn -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    
+$('.c-main').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed:500,
+    nextArrow:".next",
+    prevArrow:".prev",
+    autoplay: true,
+  autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 991.98,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed:500,
+          arrows:false,
+          dots:false
+        }
+      },
+      {
+        breakpoint: 766.98,
+        settings: {
+          slidesToShow: 2,
+    slidesToScroll: 1,
+    speed:500,
+    arrows:false,
+    dots:false
+          
+        }
+      },
+      {
+        breakpoint:  575.98,
+        settings: {
+          infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed:500,
+    arrows:false,
+    dots:false
+        }
+      }
+    
+    ]
+  });
+</script>
+<script>
+    
+    $('.h-main').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed:500,
+        nextArrow:".nextt",
+        prevArrow:".prevv",
+        autoplay: true,
+      autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 991.98,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              speed:500,
+              arrows:false,
+              dots:false
+            }
+          },
+          {
+            breakpoint: 766.98,
+            settings: {
+              slidesToShow: 2,
+        slidesToScroll: 1,
+        speed:500,
+        arrows:false,
+        dots:false
+              
+            }
+          },
+          {
+            breakpoint:  575.98,
+            settings: {
+              infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed:500,
+        arrows:false,
+        dots:false
+            }
+          }
+        
+        ]
+      });
+    </script>
+
+<script>
+    $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+
+        $('#sidebarInnerClose').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').toggleClass('d-none');
+            $('#sidebarClose').toggleClass('d-none');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+      $("#logoutLink").click(function(event){
+        event.preventDefault();
+        $("#logoutModal").modal('show');
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
